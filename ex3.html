@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ex 3</title>
+
+    <style>
+        form {
+            border: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Preferências</legend>
+        <form method="get" name="Preferencias" action="Cadastrar">
+            <label for="idNome">Nome: </label>
+            <input type="text" id="idNome" name="nome" />
+            <br>
+            <label for="idEmail">E-Mail: </label>
+            <input id="idEmail" name="email" type="text" />
+            <br>
+            <label for="idCor">Cor favorita:</label>
+            <select name="corFavorita" id="idCor">
+                <option value="" disabled selected>Selecione</option>
+                <option value="Azul">Azul</option>
+                <option value="Preto">Preto</option>
+                <option value="Vermelho">Vermelho</option>
+                <option value="Verde">Verde</option>
+                <option value="Amarelo">Amarelo</option>
+                <option value="Branco">Branco</option>
+            </select>
+            <ul>
+                <label for="idManequim">Manequim: </label>
+                <li>
+                    <input type="radio" name="manequim" id="idPequeno" value="Pequeno"/>Pequeno
+                </li>
+                <li>
+                    <input type="radio" name="manequim" id="idMedio" value="Médio" />Médio
+                </li>
+                <li>
+                    <input type="radio" name="manequim" id="idGrande" value="Grande" />Grande
+                </li>
+                <li>
+                    <input type="radio" name="manequim" id="idExtraGrande" value="Extra Grande" />Extra grande
+                </li>
+            </ul>
+            <ul>
+                <label for="idEstilo">Estilo: </label>
+                <li>
+                    <input type="radio" name="estilo" id="idDespojado" value="Despojado" />Despojado
+                </li>
+                <li>
+                    <input type="radio" name="estilo" id="idCasual" value="Casual" />Casual
+                </li>
+                <li>
+                    <input type="radio" name="estilo" id="idEsporte" value="Esporte" />Esporte
+                </li>
+                <li>
+                    <input type="radio" name="estilo" id="idSocial" value="Social" />Social
+                </li>
+            </ul>
+            <div class="botoes">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>
