@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 2</title>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            height: 70vh;
+        }
+        fieldset {
+            width: 322px;
+            margin: auto;
+        }
+        .usuario, .senha {
+            display: flex;
+            flex-direction: column;
+            padding: 4px;
+        }
+        .botoes {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .botao:nth-child(2) {
+            margin-left: 4px;
+        }
+        .botao {
+            margin-top: 8px;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Formulário</legend>
+        <form action="logar" name="Acesso" method="get">
+            <div class="usuario">
+                <label for="idUsuario">Usuário</label>
+                <input type="text" name="usuario" id="idUsuario"/>
+            </div>
+            <div class="senha">
+                <label for="idSenha">Senha</label>
+                <input type="password" name="senha" id="idSenha" maxlength="12" />
+            </div>
+            <div class="botoes">
+                <input type="submit" value="Enviar" class="botao"/>
+                <input type="reset" value="Limpar" class="botao" />
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>

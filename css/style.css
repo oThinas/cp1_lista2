@@ -1,0 +1,29 @@
+body {
+    display: flex;
+}
+form {
+    margin: auto;
+    border: 1px solid black;
+    padding: 8px;
+}
+form input, select {
+    margin-bottom: 8px;
+}
+form ul {
+    list-style-type: none;
+    margin: 8px 0;
+    padding: 0;
+}
+#idInfoSMS {
+    margin-bottom: 16px;
+}
+.botoes {
+    display: flex;
+    justify-content: flex-end;
+}
+[type="submit"], [type="reset"] {
+    margin-bottom: 0;
+}
+[type="reset"] {
+    margin-left: 8px;
+}

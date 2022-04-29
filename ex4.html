@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 4</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="agendar" method="post" name="Agenda">
+        <label for="idNome">Nome: </label>
+        <input type="text" id="idNome" name="Nome" />
+        <br>
+        <label for="idEmail">E-Mail: </label>
+        <input type="text" id="idEmail" name="Email" />
+        <ul>
+            <label for="idTipoEmail">Tipo E-Mail: </label>
+            <li>
+                <input type="radio" name="tipoEmail" id="idTipoEmail" value="Comercial">Comercial
+            </li>
+            <li>
+                <input type="radio" name="tipoEmail" id="idTipoEmail" value="Pessoal">Pessoal
+            </li>
+        </ul>
+        <label for="idCargo">Cargo: </label>
+        <select name="cargo" id="idCargo">
+            <option value="Presidente">Presidente</option>
+            <option value="Vice-Presidente">Vice-Presidente</option>
+            <option value="Diretor">Diretor</option>
+            <option value="Gerente">Gerente</option>
+            <option value="Supervisor">Supervisor</option>
+            <option value="Assistente">Assistente</option>
+        </select>
+        <br>
+        <label for="idEMpresa">Empresa: </label>
+        <input type="text" name="Empresa" id="idEmpresa" />
+        <br>
+        <label for="idTelComercial">Tel. Comercial: </label>
+        <input type="text" id="idTelComercial" name="telCom" />
+        <br>
+        <label for="idTelPessoal">Tel. Celular: </label>
+        <input type="text" id="idTelCelular" name="telCelular" />
+        <br>
+        <ul>
+            <label for="idTipoContato">Tipo Contato:</label>
+            <li>
+                <input type="checkbox" name="tipoContato" id="idComercial" />Comercial
+            </li>
+            <li>
+                <input type="checkbox" name="tipoContato" id="idPessoal" />Pessoal
+            </li>
+        </ul>
+        <div class="botoes">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
